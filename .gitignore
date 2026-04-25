@@ -1,0 +1,5 @@
+node_modules/
+dist/
+coverage/
+data/*.sqlite
+data/*.sqlite-journal

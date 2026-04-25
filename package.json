@@ -1,0 +1,42 @@
+{
+  "name": "hrtask",
+  "version": "1.0.0",
+  "description": "ExampleHR time-off microservice prototype",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start:dev": "ts-node -r tsconfig-paths/register src/main.ts",
+    "seed": "ts-node -r tsconfig-paths/register src/seed.ts",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --runInBand --coverage"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.8",
+    "@nestjs/core": "^11.1.8",
+    "@nestjs/platform-express": "^11.1.8",
+    "@nestjs/typeorm": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^11.1.8",
+    "@types/express": "^5.0.4",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.7.2",
+    "@types/supertest": "^6.0.3",
+    "jest": "^30.2.0",
+    "source-map-support": "^0.5.21",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
+  }
+}
